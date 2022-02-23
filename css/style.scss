@@ -251,6 +251,8 @@ section{
 
     .section2{
         .container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
             .carusel{
                width: 178px;
                height: 100px; 
@@ -429,12 +431,12 @@ footer{
     }
 }
 
-@media screen and (max-width:770px){
+@media screen and (max-width:380px){
     header{
         nav{
             background: #00cc00;
             .container{
-                width: 700px;
+                width: 300px;
                 margin: 15px auto;
                 .fa_fa-shopping-cart{
                     display: block;
@@ -450,7 +452,7 @@ footer{
         .h-footer{
             display: none;
             .container{
-                widows: 700px;
+                width: 300px;
                 margin: 0 auto;
             }
         }
@@ -458,7 +460,7 @@ footer{
     section{
         .section1{
             .container{
-                widows: 700px;
+                width: 300px;
                 margin: 0 auto;
                 .section1-top{
                     display: none;
@@ -480,55 +482,52 @@ footer{
         .section2{
             margin: 15px auto;
             .container{
-                width: 700px;
+                width: 300px;
                 margin: 0 auto;
+                padding: 0;
+                display: grid !important;
+                grid-template-columns: auto auto;
+                .carusel{
+                    width: 140px;
+                    height: 100px;
+                    margin: 3px 3px;
+                }
+                
             }
         }
         .section3{
             .container{
-                widows: 700px;
+                width: 350px;
                 margin: 0 auto;
+                padding: 0;
                 .cards{
-                    margin: 25px auto;
                     display: grid;
-                    grid-template-columns: auto auto auto auto;
+                    grid-template-columns: auto auto;
+                    .card{
+                        margin: 0 3px;
+                        .card-body{
+                            p{
+                                font-size: 12px;
+                            }
+                            h6{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .section-name{
+            .container{
+                button{
+                    width: 57px;
+                    height: 32px;
                 }
             }
         }
     }
     
     footer{
-        .container{
-            width: 700px;
-            margin: 0 auto;
-            .row{
-                .col-6{
-                    .nav{
-                        font-size: 10px;
-                    }
-                }
-                .col-6{
-                    .row{
-                        .col-6{
-                            img{
-                                width: 123px;
-                                height: 154px;
-                            }
-                        }
-                        .col-6{
-                            p{
-                                font-size: 8px;
-                            }
-                            a{
-                                img{
-                                    width: 83px;
-                                    height: 33px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        display: none;
     }
 }

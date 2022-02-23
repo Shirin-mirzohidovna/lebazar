@@ -282,6 +282,13 @@ section .section1 .container .row .col-3 .right-card .container-card .narx span 
   font-size: 15px;
 }
 
+section .section2 .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
 section .section2 .container .carusel {
   width: 178px;
   height: 100px;
@@ -472,12 +479,12 @@ footer .container .row .col-6 .row .col-6 a img {
   padding: 0;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 380px) {
   header nav {
     background: #00cc00;
   }
   header nav .container {
-    width: 700px;
+    width: 300px;
     margin: 15px auto;
   }
   header nav .container .fa_fa-shopping-cart {
@@ -493,11 +500,11 @@ footer .container .row .col-6 .row .col-6 a img {
     display: none;
   }
   header .h-footer .container {
-    widows: 700px;
+    width: 300px;
     margin: 0 auto;
   }
   section .section1 .container {
-    widows: 700px;
+    width: 300px;
     margin: 0 auto;
   }
   section .section1 .container .section1-top {
@@ -516,37 +523,45 @@ footer .container .row .col-6 .row .col-6 a img {
     margin: 15px auto;
   }
   section .section2 .container {
-    width: 700px;
+    width: 300px;
     margin: 0 auto;
+    padding: 0;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  section .section2 .container .carusel {
+    width: 140px;
+    height: 100px;
+    margin: 3px 3px;
   }
   section .section3 .container {
-    widows: 700px;
+    width: 350px;
     margin: 0 auto;
+    padding: 0;
   }
   section .section3 .container .cards {
-    margin: 25px auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
   }
-  footer .container {
-    width: 700px;
-    margin: 0 auto;
+  section .section3 .container .cards .card {
+    margin: 0 3px;
   }
-  footer .container .row .col-6 .nav {
+  section .section3 .container .cards .card .card-body p {
+    font-size: 12px;
+  }
+  section .section3 .container .cards .card .card-body h6 {
     font-size: 10px;
   }
-  footer .container .row .col-6 .row .col-6 img {
-    width: 123px;
-    height: 154px;
+  section .section-name .container button {
+    width: 57px;
+    height: 32px;
   }
-  footer .container .row .col-6 .row .col-6 p {
-    font-size: 8px;
-  }
-  footer .container .row .col-6 .row .col-6 a img {
-    width: 83px;
-    height: 33px;
+  footer {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
