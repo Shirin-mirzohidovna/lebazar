@@ -479,12 +479,12 @@ footer .container .row .col-6 .row .col-6 a img {
   padding: 0;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 425px) {
   header nav {
     background: #07e407;
   }
   header nav .container {
-    width: 300px;
+    width: 380px;
     margin: 15px auto;
   }
   header nav .container .fa_fa-shopping-cart {
@@ -500,11 +500,11 @@ footer .container .row .col-6 .row .col-6 a img {
     display: none;
   }
   header .h-footer .container {
-    width: 300px;
+    width: 380px;
     margin: 0 auto;
   }
   section .section1 .container {
-    width: 300px;
+    width: 380px;
     margin: 0 auto;
   }
   section .section1 .container .section1-top {
@@ -523,7 +523,7 @@ footer .container .row .col-6 .row .col-6 a img {
     margin: 15px auto;
   }
   section .section2 .container {
-    width: 300px;
+    width: 380px;
     margin: 0 auto;
     padding: 0;
     display: -ms-grid !important;
@@ -532,12 +532,12 @@ footer .container .row .col-6 .row .col-6 a img {
         grid-template-columns: auto auto;
   }
   section .section2 .container .carusel {
-    width: 140px;
+    width: 160px;
     height: 100px;
     margin: 3px 3px;
   }
   section .section3 .container {
-    width: 350px;
+    width: 360px;
     margin: 0 auto;
     padding: 0;
   }
